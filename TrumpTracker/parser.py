@@ -5,7 +5,7 @@
 # ---------------------------------------------------------------------------------------
 #
 # 'Banner' parser:
-# Parses the data retrived from CNN and lists the latest 25 articles about Trump, and
+# Parses the data retrieved from CNN and lists the latest 25 articles about Trump, and
 # their URLs.
 #
 # ---------------------------------------------------------------------------------------
