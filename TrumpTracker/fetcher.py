@@ -53,5 +53,4 @@ def romanov():
         f.write(str.encode(html1))
     end_time = time.time()
     elapsed = int(end_time-start_time)
-    print("Elapsed time: "+ str(elapsed))
     return str(elapsed)
