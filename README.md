@@ -1,5 +1,5 @@
 # Introduction #
-`TrumpTracker` is a simple website which can load the latest 25 articles from “us.cnn.com/politics” about Donald Trump. 
+`TrumpTracker` is a simple website which can load the latest 25 articles from [CNN US Politics](https://us.cnn.com/politics/) about Donald Trump. 
 
 # Prerequisites #
 This website is built to run on the address `localhost:5000` using the [Flask](http://flask.pocoo.org/) framework. In order to run the website, the following dependencies must be present on the system:
