@@ -24,3 +24,4 @@ Open a Linux terminal, head to the website directory (`somePath/TrumpTracker/`) 
 python3 basic.py
 ```
 This will run a local server at `localhost:5000`. Now you can visit the webpage by typing this address into your browser of choice, which should have Javascript enabled.
+To shut the server down, just press `Ctrl+C` in the same Linux terminal that you used to start the server.
