@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $url = "http://127.0.0.1:5000/fetch"
+
+    $(function() {
+      var data_loaded = 0;
+      $("div.loader").hide();
+      $("ol#list").hide();
+
+      $('button').click(function(){
+        if (data_loaded === 0) {
+
+          // First time loading data
+          $("div.loader").show();
+          $("button").hide();
+          $.getJSON($url, function(data){
+
+            // Successful fetch! Update the article list
+            $.each(data, function(key, element){
+              $('ol#list').append(
+                $('<li>').append(
+                  $('<a>').text(key).attr({'href':element, 'target':'_blank'})
+                )
+              );
+            });
+            $("ol#list").show();
+            $("div.loader").hide();
+            $('button').show();
+            data_loaded = 1;
+          });
+        }
+        else {
+          // Just refreshing the shown articles
+          $('ol#list').empty().hide();
+          $("div.loader").show();
+          $("button").hide();
+          $.getJSON($url, function(data){
+
+            // Successful fetch! Update the article list
+            $.each(data, function(key, element){
+              $('ol#list').append(
+                $('<li>').append(
+                  $('<a>').text(key).attr({'href':element, 'target':'_blank'})
+                )
+              );
+            });
+
+            // Make the links open in a new tab
+            $("ol#list").show();
+            $("div.loader").hide();
+            $('button').show();
+          });
+        }
+      });
+    });
+  </script>
+
+  <style>
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+
+</head>
+<body>
+
+  <h1>Trump Tracker</h1>
+  <p>
+    Use 'Request' to load the latest 25 articles on CNN.com about Donald Trump.<br>
+    This process might take some time.<br>
+    (Note: Sometimes CNN.com does not respond well. In such cases, refresh the page and try again)
+  </p>
+  <!--<p><a href=# id=calculate>calculate server side</a>< -->
+  <!--<p>Monitor:
+    <span id="monitor">N/A</span>
+  </p>-->
+  <div id="content">
+    <ol type="1" id="list">
+    </ol>
+  </div>
+  <div class="loader"></div>
+  <button>Request</button>
+
+</body>
+</html>
+
