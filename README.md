@@ -19,7 +19,7 @@ pip3 install -r requirements.txt  # Add '--user' if you do not have root access
 2. Visit the website's [github](https://github.com/JerichoIX/TrumpTracker/) repository and download a compressed version of all the files manually. Please note that you will need to install the prerequisites yourself.
 
 # Running the Website #
-Open a Linux terminal, head to the website directory (`somePath/TrackerWebsite/`) and run the following code:
+Open a Linux terminal, head to the website directory (`somePath/TrumpTracker/`) and run the following code:
 ```
 python3 basic.py
 ```
