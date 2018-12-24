@@ -30,7 +30,6 @@ def romanov():
     start_time = time.time()
     driver = webdriver.PhantomJS()
     driver.get(URL)
-    #print("Got URL!")
 
     while True:
         last_height = driver.execute_script("return document.body.scrollHeight")
@@ -47,11 +46,9 @@ def romanov():
             last_height = new_height
             continue
 
-    #print('Fetching done!')
     html1 = driver.page_source
     #html2 = driver.execute_script("return document.documentElement.innerHTML;")
 
-    #print(type(html1))
     with open('politics.html', 'wb') as f:
         f.write(str.encode(html1))
     end_time = time.time()

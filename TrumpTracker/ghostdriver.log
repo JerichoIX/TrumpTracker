@@ -1,12 +1,12 @@
-[INFO  - 2018-12-24T12:40:21.907Z] GhostDriver - Main - running on port 56133
-[INFO  - 2018-12-24T12:40:22.857Z] Session [1488fcf0-0779-11e9-a837-958bed695117] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2018-12-24T12:40:22.857Z] Session [1488fcf0-0779-11e9-a837-958bed695117] - page.customHeaders:  - {}
-[INFO  - 2018-12-24T12:40:22.857Z] Session [1488fcf0-0779-11e9-a837-958bed695117] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2018-12-24T12:40:22.857Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 1488fcf0-0779-11e9-a837-958bed695117
-[ERROR - 2018-12-24T12:40:24.890Z] Session [1488fcf0-0779-11e9-a837-958bed695117] - page.onError - msg: TypeError: undefined is not a function (evaluating 'document.location.hostname.includes('explorepartsunknown.com')')
+[INFO  - 2018-12-24T13:36:05.755Z] GhostDriver - Main - running on port 47267
+[INFO  - 2018-12-24T13:36:06.699Z] Session [dd9ef020-0780-11e9-abaf-6112bd3d80c0] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-12-24T13:36:06.699Z] Session [dd9ef020-0780-11e9-abaf-6112bd3d80c0] - page.customHeaders:  - {}
+[INFO  - 2018-12-24T13:36:06.700Z] Session [dd9ef020-0780-11e9-abaf-6112bd3d80c0] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-12-24T13:36:06.700Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: dd9ef020-0780-11e9-abaf-6112bd3d80c0
+[ERROR - 2018-12-24T13:36:08.807Z] Session [dd9ef020-0780-11e9-abaf-6112bd3d80c0] - page.onError - msg: TypeError: undefined is not a function (evaluating 'document.location.hostname.includes('explorepartsunknown.com')')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2018-12-24T12:40:24.890Z] Session [1488fcf0-0779-11e9-a837-958bed695117] - page.onError - stack:
+[ERROR - 2018-12-24T13:36:08.807Z] Session [dd9ef020-0780-11e9-abaf-6112bd3d80c0] - page.onError - stack:
   registerModuleWithAdFuel (undefined:7447)
   dispatchEvent (:0)
   init (:11474)

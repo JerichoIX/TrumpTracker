@@ -41,7 +41,7 @@ PASTEBIN_PASS = 'Wraithmaster47'
 
 # Import libraries
 from bs4 import BeautifulSoup
-import csv, json
+import json
 
 def banner():
 
@@ -81,13 +81,6 @@ def banner():
         if counter >= MAX_ARTICLES:
             break
 
-    #print(titles)
-    #print(links)
-    #with open("output.csv", 'w') as file:
-    #    wr = csv.writer(file, dialect='excel')
-    #    wr.writerow(titles)
-    #    wr.writerow(links)
-
     # Build a dict variable to write the results in JSON format
     result = {}
     for title in titles:
@@ -96,13 +89,6 @@ def banner():
         i = titles.index(title)
         result[title] = links[i]
 
-    #result['titles'] = titles
-    #result['links'] = links
-    #print(titles)
 
     return json.dumps(result)
-    # Upload the file to a web service
-    #with open('output.csv', 'r') as f:
-    #   r = requests.post('http://httpbin.org/post', files={'output.csv': f})
-
 
