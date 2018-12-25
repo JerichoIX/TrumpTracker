@@ -13,18 +13,14 @@
 # SYSTEM PARAMETERS - DO NOT ALTER!
 # --------------------------------
 URL = 'http://us.cnn.com/politics'
-PAUSE_TIME = 3
-
-# Import required libraries
-import time
-from selenium import webdriver
-
-URL = 'http://us.cnn.com/politics'
                                         # The URL the spider will scrape
 PAUSE_TIME = 3
                                         # How long should the scraper wait for the site
                                         # to load
 # ***************************************************************************************
+# Import required libraries
+import time
+from selenium import webdriver
 
 def romanov():
     start_time = time.time()
