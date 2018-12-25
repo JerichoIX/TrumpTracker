@@ -7,11 +7,11 @@ This website is built to run on the address `localhost:5000` using the [Flask](h
 2. [Flask](http://flask.pocoo.org/) – Flask is a lightweight framework to build websites using python. 
 3. [Selenium](https://selenium-python.readthedocs.io/installation.html) – This library is used as a web driver, something that acts like a browser and emulates its actions, in order to load the scraping target website and fetch its data.
 4. [Beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup) - A python library which facilitates the parsing of HTML document. Make sure to install Beautifulsoup4 as the older versions are no longer being maintained.
-5. [PhantomJS](http://phantomjs.org/download.html) - The headless browser used in this code by Selenium to crawl the web. You will need to have this executable in one of your `$PATH` directories. YOu can see them by executing `echo $PATH` in a Linux terminal.
+5. [PhantomJS](https://gist.github.com/julionc/7476620) - The headless browser used in this code by Selenium to crawl the web. You will need to have this executable in one of your `$PATH` directories. YOu can see them by executing `echo $PATH` in a Linux terminal.
 
 # Installation #
 After installing all the outlined prerequisites, you can use the one of the following ways to get a copy of the website and all its required components to function properly:
-1. Use the following code to clone this repository and set things up in Linux (this will install all the prerequisite packages if you already have [pip](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi) on your system):
+1. Use the following code to clone this repository and set things up in Linux (this will install all of the prerequisite packagesm except for PhantomJS, if you already have [pip](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi) on your system):
 ```
 git clone https://github.com/JerichoIX/TrumpTracker.git
 cd TrumpTracker/
