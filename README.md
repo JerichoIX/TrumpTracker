@@ -11,7 +11,7 @@ This website is built to run on the address `localhost:5000` using the [Flask](h
 
 # Installation #
 After installing all the outlined prerequisites, you can use the one of the following ways to get a copy of the website and all its required components to function properly:
-1. Use the following code to clone this repository and set things up in Linux (this will install all of the prerequisite packagesm except for PhantomJS, if you already have [pip](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi) on your system):
+1. Use the following code to clone this repository and set things up in Linux (this will install all of the prerequisite packages except for PhantomJS, if you already have [pip](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi) on your system):
 ```
 git clone https://github.com/JerichoIX/TrumpTracker.git
 cd TrumpTracker/
