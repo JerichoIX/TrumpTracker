@@ -1,4 +1,0 @@
-python3
-beautifulsoup4
-flask
-selenium
